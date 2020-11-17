@@ -1,0 +1,1 @@
+g++ -O3 -I /media/kaveh/DATA/lemon-1.3.1 -I /media/kaveh/DATA/lemon-1.3.1/build -o main  main.cpp -L /media/kaveh/DATA/lemon-1.3.1/lemon/.libs -L /media/kaveh/DATA/lemon-1.3.1/build/lemon -L /media/kaveh/DATA/Installed_cplex_linux/cplex/lib/x86-64_linux/static_pic -lemon -lcplex -lm -lpthread

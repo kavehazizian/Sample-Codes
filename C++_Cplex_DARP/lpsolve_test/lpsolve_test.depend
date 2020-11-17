@@ -1,0 +1,41 @@
+# depslib dependency file v1.0
+1474968071 source:/media/kaveh/DATA/C++_Cplex_DARP/lpsolve_test/main.cpp
+	"/media/kaveh/DATA/lpsolve/lp_solve_5.5.2.5_dev_ux32/lp_lib.h"
+
+1474662615 /media/kaveh/DATA/lpsolve/lp_solve_5.5.2.5_dev_ux32/lp_lib.h
+	<sys/types.h>
+	<stdlib.h>
+	<string.h>
+	<math.h>
+	<stdio.h>
+	"lp_types.h"
+	"lp_utils.h"
+	<windows.h>
+	<dlfcn.h>
+	"lp_Hash.h"
+	"lp_matrix.h"
+	"lp_mipbb.h"
+	"lp_SOS.h"
+
+1474662615 /media/kaveh/DATA/lpsolve/lp_solve_5.5.2.5_dev_ux32/lp_types.h
+	<windows.h>
+
+1474662615 /media/kaveh/DATA/lpsolve/lp_solve_5.5.2.5_dev_ux32/lp_utils.h
+	"lp_fortify.h"
+	"lp_types.h"
+
+1474662615 /media/kaveh/DATA/lpsolve/lp_solve_5.5.2.5_dev_ux32/lp_Hash.h
+
+1474662615 /media/kaveh/DATA/lpsolve/lp_solve_5.5.2.5_dev_ux32/lp_matrix.h
+	"lp_types.h"
+	"lp_utils.h"
+
+1474662615 /media/kaveh/DATA/lpsolve/lp_solve_5.5.2.5_dev_ux32/lp_mipbb.h
+	"lp_types.h"
+	"lp_utils.h"
+
+1474662615 /media/kaveh/DATA/lpsolve/lp_solve_5.5.2.5_dev_ux32/lp_SOS.h
+	"lp_types.h"
+	"lp_utils.h"
+	"lp_matrix.h"
+
