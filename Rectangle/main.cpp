@@ -40,6 +40,7 @@ cout<<"ycoordinate is"<<p1.gety()<<endl;
 Square s1;
 //s1.setBLcorner(4,6);
 //s1.setBRcorner(9,6);
+// for testing the submodule
 s1.settopcorners(Point(4,6),Point(9,6));
 
 cout<<"Side is "<<s1.side()<<"\t"<<s1.Circum()<<"\t"<<s1.Area()<<endl;
