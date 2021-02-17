@@ -15,6 +15,7 @@ using namespace std;
 int main()
 {
 // lap avalda ozaxdaki	
+	//Submodule test
 /*Point p1(2,4);
 cout<<"Xcoordinate is"<<p1.getx()<<endl;
 cout<<"ycoordinate is"<<p1.gety()<<endl;
