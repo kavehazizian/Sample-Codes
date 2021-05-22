@@ -638,6 +638,7 @@ int main()
         }
 
         DARP_results.close();
+        // just for testing the vc;
         // anotherone here for merge conflict testing;
         // just for testing the vc;
         //cout<<rel_ride_time_mat<<endl;
