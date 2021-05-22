@@ -26,6 +26,7 @@ arma::umat arcs_cal(int n)
    //yaxji
    // revert
    //birinji
+   //ikinjki
     arma::umat arcs_set;
     arcs_set.zeros(4 * n * n, 2);
     int counter_arc = 0;
