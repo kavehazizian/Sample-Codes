@@ -25,8 +25,6 @@ arma::umat arcs_cal(int n)
    //another one
    //yaxji
    // revert
-   //birinji
-   //ikinjki
     arma::umat arcs_set;
     arcs_set.zeros(4 * n * n, 2);
     int counter_arc = 0;
@@ -646,7 +644,6 @@ int main()
         // just for testing the vc;
         // anotherone here for merge conflict testing;
         // just for testing the vc;
-
         //cout<<rel_ride_time_mat<<endl;
     }
     env.end();
