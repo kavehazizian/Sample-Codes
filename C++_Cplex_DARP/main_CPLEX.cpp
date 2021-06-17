@@ -21,6 +21,10 @@ using namespace std;
 // for rebase purpose
 arma::umat arcs_cal(int n)
 {
+   //new comment
+   //another one
+   //yaxji
+   // revert
     arma::umat arcs_set;
     arcs_set.zeros(4 * n * n, 2);
     int counter_arc = 0;
@@ -637,7 +641,9 @@ int main()
         }
 
         DARP_results.close();
+        // just for testing the vc;
         // anotherone here for merge conflict testing;
+        // just for testing the vc;
         //cout<<rel_ride_time_mat<<endl;
     }
     env.end();
