@@ -4,5 +4,4 @@
 *.bat
 *.pyc
 Lib/
-env/
-some_python_codes/
+venv/
