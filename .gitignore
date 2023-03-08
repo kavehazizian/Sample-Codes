@@ -1,0 +1,8 @@
+/.idea/
+/setup/
+*.exe
+*.bat
+*.pyc
+Lib/
+env/
+some_python_codes/
