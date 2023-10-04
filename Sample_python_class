@@ -1,0 +1,97 @@
+from math import cos, sin, pi
+
+
+class Polygone():
+    def __init__(self, num_edge: int, circum_rad: float) -> None:
+        self._num_edge = num_edge
+        self._circum_rad = circum_rad
+
+    @property
+    def num_edge(self):
+        return self._num_edge
+
+    @num_edge.setter
+    def num_edge(self, a):
+        if (a < 18):
+            raise ValueError("Sorry you age is below eligibility criteria")
+        print("setter method called")
+        self._num_edge = a
+
+    @property
+    def circum_rad(self):
+        return self._circum_rad
+
+    @property
+    def int_angle(self):
+        return (self._num_edge - 2) * (180 / self._num_edge)
+
+    @property
+    def apothem(self):
+        return (self._circum_rad * cos(pi / self._num_edge))
+
+    @property
+    def edge_length(self):
+        return 2 * (self._circum_rad * sin(pi / self._num_edge))
+
+    @property
+    def area(self):
+        return (self._num_edge * self.edge_length * self.apothem) / 2
+
+    @property
+    def perimeter(self):
+        return (self._num_edge * self.edge_length)
+
+    def __repr__(self) -> str:
+        return (f'Polygon with {self.num_edge} edges and {self._circum_rad} circum radii')
+
+    def __eq__(self, other) -> bool:
+        if isinstance(other, Polygone):
+            return self._num_edge == other._num_edge and self._circum_rad == other._circum_rad
+        return False
+
+    def __gt__(self, other) -> bool:
+        if isinstance(other, Polygone):
+            return self._num_edge > other._num_edge
+        return False
+
+
+class Polygons():
+    def __init__(self, num_vert: int, common_circum: float) -> None:
+        if num_vert < 3:
+            raise ValueError('Number of vertices must be at least 3!')
+        self._num_vert = num_vert
+        self._circum_rad = common_circum
+        self._polygons = [Polygone(n, common_circum) for n in range(3, num_vert+1)]
+
+    @property
+    def num_vert(self):
+        return self._num_vert
+
+    @property
+    def circum_rad(self):
+        return self._circum_rad
+
+    @property
+    def efficient_polygon(self):
+        sorted_polygons = sorted(self._polygons,
+                                 key=lambda p: p.area / p.perimeter,
+                                 )
+        return sorted_polygons[-1]
+
+    def __len__(self,) -> int:
+        return len(self._polygons)
+
+    def __repr__(self) -> str:
+        return f'({len(self._polygons)} number of polygons with common radi of {self.circum_rad})'
+
+    def __getitem__(self, index):
+        return self._polygons[index]
+
+
+if __name__ == '__main__':
+    my_poly = Polygone(4, 5.5)
+    print(my_poly.num_edge, my_poly.int_angle, my_poly.area)
+    sec_poly = Polygone(7, 9)
+    print(sec_poly > my_poly)
+    my_polygons = Polygons(6, 10)
+    print(len(my_polygons), my_polygons.efficient_polygon)
